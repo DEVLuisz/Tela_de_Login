@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+
+    <link rel="stylesheet" href="../CSS/Login_Page.css">
+
+    <script src="../JS/Login_Page.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#forgetSenha").click(function () {
+                $("#div1").hide('slow')
+                $("#div1").show('fast')
+            })
+
+            $("#btn").click(function () {
+                $("#div1").animate({
+                    'width': '100%',
+                    'opacity': '0.2'
+                }, 'slow')
+                $("#div1").fadeTo('fast', '0.2')
+                $("#div1").animate({
+                    'width': '360px',
+                    'opacity': '1'
+                }, 'slow')
+            })
+
+            $("#create").click(function () {
+                $("#div1").animate({
+                    'width': '200px'
+                })
+                $("#div1").animate({
+                    'height': '200px'
+                })
+                $("#div1").animate({
+                    'width': '360px'
+                })
+                $("#div1").animate({
+                    'height': '500px'
+                })
+                $("#div1").animate({
+                    'left': '40px'
+                })
+                $("#div1").animate({
+                    'left': '0px'
+                })
+            })
+        })
+    </script>
+</head>
+
+<section>
+    <div class="x-box" id="div1">
+        <div class="form">
+            <h2>Login</h2>
+            <form>
+                <div class="inputBx" id="div1">
+                    <input type="text" id="nomezinho" placeholder="Seu Nome de Usúario" onclick="Not_Number()">
+                    <img src="../Img/User_Icon.png">
+                </div>
+                <div class="inputBx">
+                    <input type="password" id="senhaSecreta" placeholder="Sua senha">
+                    <img src="../img/Cadeado_Icon.png">
+                </div>
+                <label class="remember"><input type="checkbox" id="check" onclick="lembrar()"> Lembrar de
+                    Mim.</label>
+                <div class="inputBx">
+                    <input type="submit" onclick="noEmpty()" value="Logar" id="btn" class="btn"
+                        style="--clr:#00ccff;--i:0">
+                </div>
+                <p>Esqueci a minha <a id="forgetSenha" onclick="lostSenha()" href="#">Senha</a></p>
+                <p>Criar <a id="create" onclick="createFaill()" href="#">Conta</a></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<body>
+
+</body>
+
+</html>
