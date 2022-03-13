@@ -12,7 +12,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #131212 50%, #607d8b 100%); /*Divisão de cores*/
+    background: linear-gradient(-30deg, #eb1236 0%, #FF00FF 50%); /*Divisão de cores* (-30deg, #03a9f4 0%, #3a78b7 50%, #131212 50%, #607d8b 100%);/
     filter: hue-rotate(120deg);/*A magia acontece*/
     animation: Pisca-Pisca 10s linear infinite;
 }
@@ -27,6 +27,7 @@ section {
         filter: hue-rotate(360deg);
     }
 }
+
 
 .x-box{
     position: relative;
@@ -187,4 +188,10 @@ section {
     color: #fff;
     text-decoration: none;
     font-weight: 900;
+}
+
+section .copyright{
+    position: absolute;
+    color: #fff;
+    margin-top: 40%;
 }
