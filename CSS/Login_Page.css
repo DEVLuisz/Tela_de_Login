@@ -191,11 +191,6 @@ section {
 }
 
 section .copyright{
-    width: 100%;
-    background: #FF00FF;
-    backdrop-filter: blur(10px);
-    border-radius: 70%;
-    text-align: center;
     position: absolute;
     color: #fff;
     margin-top: 51%; /*Famosa gambiarra*/
@@ -209,3 +204,4 @@ section .copyright p span{
     font-weight: 500;
     color: #000;
 }
+
