@@ -1,4 +1,4 @@
-var animate =function(e){
+var animate = function(e){
 
     e.preventDefault;
     //resentando a animação
